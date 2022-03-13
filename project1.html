@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            padding: 20px 10px;
+            background: hsl(230, 70%, 10%);
+            display: flex;
+            color: white;
+            box-shadow: 0 2px 8px 1px black;
+        }
+
+        .header-text {
+            flex: 1;
+            text-align: center;
+            font-weight: 600;
+            text-shadow: 0 0 2px white;
+            user-select: none;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            border: none;
+            cursor: pointer;
+            background: transparent;
+            font-size: 1em;
+            transition-duration: 300ms;
+            padding: 4px 10px;
+            text-decoration: none;
+            background: white;
+            color: black;
+        }
+
+        .home-button:hover {
+            background: hsl(230, 70%, 10%);
+            color: white;
+        }
+
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="home-button">HOME</a>
+        <h1 class="header-text">
+            James McArthur
+        </h1>
+    </header>
+</body>
+
+</html>

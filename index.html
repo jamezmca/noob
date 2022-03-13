@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossOrigin="anonymous" referrerPolicy="no-referrer" />
+    <title>Dev James</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            padding: 20px 10px;
+            background: hsl(230, 70%, 10%);
+            display: flex;
+            color: white;
+            box-shadow: 0 2px 8px 1px black;
+        }
+
+        .header-text {
+            flex: 1;
+            text-align: center;
+            font-weight: 600;
+            text-shadow: 0 0 2px white;
+            user-select: none;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            border: none;
+            cursor: pointer;
+            background: transparent;
+            font-size: 1em;
+            transition-duration: 300ms;
+            padding: 4px 10px;
+            text-decoration: none;
+            background: white;
+            color: black;
+        }
+
+        .home-button:hover {
+            background: hsl(230, 70%, 10%);
+            color: white;
+        }
+
+
+        main {
+            flex: 1;
+        }
+
+        section {
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 10px;
+        }
+
+        section i {
+            font-size: 2.5rem;
+        }
+
+        .section-header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .section-content {
+            font-weight: 300;
+            font-size: 0.9em;
+            padding: 20px 0;
+        }
+
+        #education ul {
+            max-width: fit-content;
+            margin: 0 auto;
+        }
+
+
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: unset !important;
+        }
+
+        .project-card {
+            width: 400px;
+            max-width: 100vw;
+            background: hsl(230, 70%, 10%);
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition-duration: 300ms;
+            text-decoration: none;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card h3 {
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+
+        .project-card p {
+            margin-top: 8px;
+            font-weight: 200;
+            text-align: justify;
+            padding-bottom: 10px;
+        }
+
+        .project-card ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+
+        footer a {
+            color: black
+        }
+
+        footer ul {
+            padding: 10px 0;
+
+            margin: 0 auto;
+            max-width: fit-content;
+            list-style: none;
+            display: flex;
+            gap: 1em;
+        }
+
+        footer i {
+            cursor: pointer;
+            transition-duration: 300ms;
+            font-size: 1.5rem;
+        }
+
+        footer i:hover {
+            color: turquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="home-button">HOME</a>
+        <h1 class="header-text">
+            James McArthur
+        </h1>
+    </header>
+
+    <main>
+        <section id="about-me" class="about-me">
+            <div class="section-header">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="section-content">
+                I am a self-taught Software Developer with a background in Civil Engineering and I enjoy teaching and
+                creating.
+            </div>
+        </section>
+
+
+        <section id="education">
+            <div class="section-header">
+                <i class="fa-solid fa-medal"></i>
+                <h2>EXPERIENCE</h2>
+            </div>
+
+            <ul class="section-content">
+                <li>
+                    Civil Engineering experience
+                </li>
+                <li>
+                    Graduated from this university with this qualification
+                </li>
+                <li>
+                    Achieved these great things during my education
+                </li>
+            </ul>
+        </section>
+
+
+
+
+        <section id="projects">
+            <div class="section-header">
+                <i class="fa-solid fa-diagram-project">
+                </i>
+                <h2>PROJECTS</h2>
+            </div>
+
+
+            <a href="/project1.html" class="project-card section-content">
+                <h3>PROJECT_TITLE</h3>
+                <p>this project does the following things and I made it cause I thought it was really cool and would fix
+                    the worlds problems</p>
+                <ul class="technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PYTHON</li>
+                </ul>
+            </a>
+            <a href="/project2.html" class="project-card section-content">
+                <h3>PROJECT_TITLE</h3>
+                <p>this project does the following things and I made it cause I thought it was really cool and would fix
+                    the worlds problems</p>
+                <ul class="technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PYTHON</li>
+                </ul>
+            </a>
+            <a href="/project3.html" class="project-card section-content">
+                <h3>PROJECT_TITLE</h3>
+                <p>this project does the following things and I made it cause I thought it was really cool and would fix
+                    the worlds problems</p>
+                <ul class="technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PYTHON</li>
+                </ul>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/jamezmcarthur/" target="_black">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
